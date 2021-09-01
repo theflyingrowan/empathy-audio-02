@@ -74,7 +74,10 @@ export default class HelloWorld {
 		// spawn a copy of a kit item
 		this.kitItem = MRE.Actor.CreateFromLibrary(this.context, {
 			// the number below is the item's artifact id.
-			resourceId: 'artifact:1812869470075486548'
+			resourceId: 'artifact:1812869470075486548',
+			actor: {
+				appearance: { enabled: false }
+			}
 		});
 
 		//==========================
